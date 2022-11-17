@@ -1,0 +1,132 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    min-height: 100%;
+}
+
+
+li {
+    position: relative;
+    padding-inline-start: 25px;
+    margin-bottom: 8px;
+    list-style-type: none;
+  }
+
+.list__item::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+}
+
+.list__item--red::before {
+    background-color: red; 
+  }
+
+.list__item--orange::before {
+    background-color: orange;
+  }
+
+.list__item--yellow::before {
+    background-color: yellow;
+  }
+
+.list__item--green::before {
+    background-color: green;
+  }
+
+.list__item--blue::before {
+    background-color: rgb(35, 190, 251);
+  }
+
+.list__item--darkblue::before {
+    background-color: blue;
+  }
+
+.list__item--violet::before {
+    background-color:violet;
+  }
+
+
+.poetry {
+	counter-reset: example 0;
+}
+
+.poetry__part {
+    counter-increment: example 1; 
+} 
+
+
+
+.poetry__part::before {
+	content: counter(example) " - ";
+    font-weight: 700; 
+    margin-right: 20px;
+}
+
+.pp {
+    margin-left: 35px;
+}
+
+.lighthouse__level {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+}
+
+.overlap
+{
+    width: 130px;
+    position: relative;
+    background-color: black;
+}
+
+.overlap:after
+{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    top: 14px;
+    left: 49px;
+    background-color: yellow;
+}
+
+.rectangle1 {
+    width: 150px;
+    background-color: white;
+    border: 1px solid black;
+    
+}
+
+.rectangle2 {
+    width: 170px;
+    background-color: red;
+    
+}
+
+.rectangle3 {
+    width: 190px;
+    background-color: white;
+    border: 1px solid black;
+   
+}
+
+.rectangle4 {
+    width: 210px;
+    background-color: red;
+   
+}
+
+.rectangle5 {
+    width: 250px;
+    background-color: white;
+    border: 1px solid black;
+  
+}
+
